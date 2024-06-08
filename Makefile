@@ -30,11 +30,6 @@ gnome:
 	gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 	gsettings set org.gnome.shell.app-switcher current-workspace-only true
 
-	# Appearance settings
-	gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-	gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue-dark'
-	gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue'
-
 	# Search settings
 	gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop']"
 
@@ -52,6 +47,20 @@ gnome:
 
 	gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 	gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Super>i']"
+
+	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
+
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Control><Super>Home'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'gsettings set org.gnome.desktop.interface color-scheme prefer-light'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'Prefer light'
+
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding '<Control><Super>End'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'gsettings set org.gnome.desktop.interface color-scheme prefer-dark'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name 'Prefer dark'
+
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ binding '<Control><Alt>t'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ command 'kgx'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ name 'Terminal'
 
 	gsettings set org.gnome.shell.keybindings switch-to-application-1 "[]"
 	gsettings set org.gnome.shell.keybindings switch-to-application-2 "[]"
