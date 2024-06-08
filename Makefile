@@ -1,4 +1,4 @@
-.PHONY: install nvidia
+.PHONY: install nvidia dev
 
 install:
 	su -c 'cp packages/sources.list /etc/apt/sources.list && \
@@ -8,3 +8,7 @@ install:
 
 nvidia:
 	su -c 'xargs -a packages/nvidia.list apt install -y'
+
+dev:
+	su -c 'xargs -a packages/dev.list apt install -y'
+	git remote set-url origin git@github.com:hugofresnel/dotfiles.git
