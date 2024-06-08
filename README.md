@@ -19,11 +19,15 @@ See https://www.debian.org/intro/why_debian for more.
 1. Go to the BIOS and disable **Secure Boot**.
 2. Plug the bootable USB and boot into it.
 3. Follow instructions until login. Then, open a terminal.
-4. Clone this repository and cd into it using :
+4. Install `git` and `make` :
 ```bash
-git clone https://github.com/hugofresnel.dotfiles.git && cd dotfiles
+su -c 'apt install -y git make'
 ```
-5. Inspect [`Makefile`](Makefile) and use `make` to install what you need, for example :
+5. Clone this repository and cd into it using :
+```bash
+git clone https://github.com/hugofresnel/dotfiles.git && cd dotfiles
+```
+6. Inspect [`Makefile`](Makefile) and use `make` to install what you need, for example :
 ```bash
 # Base install
 make install
