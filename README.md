@@ -35,5 +35,8 @@ make install
 # NVIDIA drivers
 make nvidia
 
+# Gnome desktop environment
+make gnome
+
 # ...
 ```
