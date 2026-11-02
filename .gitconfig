@@ -1,0 +1,7 @@
+[user]
+	name = Hugo Fresnel
+	email = contact@hugofresnel.com
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
