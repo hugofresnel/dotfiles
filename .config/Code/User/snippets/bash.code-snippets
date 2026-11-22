@@ -1,0 +1,12 @@
+{
+	"Bash script": {
+		"prefix": "bash",
+		"body": [
+			"#!/usr/bin/env bash",
+			"set -euo pipefail",
+			"",
+			""
+		],
+		"include": ["**/*.sh"],
+	}
+}
