@@ -1,7 +1,12 @@
 [user]
 	name = Hugo Fresnel
 	email = contact@hugofresnel.com
+	signingkey = ~/.ssh/id_ed25519.pub
 [init]
 	defaultBranch = main
 [push]
 	autoSetupRemote = true
+[gpg]
+    format = ssh
+[commit]
+    gpgsign = true
