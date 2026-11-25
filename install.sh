@@ -9,8 +9,9 @@ FILES=$(find "$CURRENT_DIR" \
             -type f \
             -not -path "${CURRENT_DIR}/.git/*" \
             -not -path "${CURRENT_DIR}/.gitignore" \
-            -not -path "${CURRENT_DIR}/README.md" \
-            -not -path "${CURRENT_DIR}/install.sh")
+            -not -path "${CURRENT_DIR}/README" \
+            -not -path "${CURRENT_DIR}/install.sh" \
+            -not -path "${CURRENT_DIR}/install.ps1")
 
 # Create symbolic links in home directory
 for FILE in $FILES; do
