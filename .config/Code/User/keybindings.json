@@ -1,14 +1,14 @@
 [
-    {
-        "key": "ctrl+oem_comma",
-        "command": "workbench.action.openSettingsJson"
-    },
-    {
-        "key": "ctrl+shift+oem_comma",
-        "command": "workbench.action.openGlobalKeybindingsFile"
-    },
-    {
-        "key": "ctrl+shift+j",
-        "command": "editor.action.joinLines"
-    },
+	{
+		"key": "ctrl+oem_comma",
+		"command": "workbench.action.openSettingsJson"
+	},
+	{
+		"key": "ctrl+shift+oem_comma",
+		"command": "workbench.action.openGlobalKeybindingsFile"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "editor.action.joinLines"
+	},
 ]

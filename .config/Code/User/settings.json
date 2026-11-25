@@ -1,24 +1,27 @@
 {
-    // Telemetry
-    "telemetry.telemetryLevel": "off",
+	// Telemetry
+	"telemetry.telemetryLevel": "off",
 
-    // Chat
-    "chat.disableAIFeatures": true,
+	// Chat
+	"chat.disableAIFeatures": true,
 
-    // Editor
-    "editor.inlayHints.enabled": "off",
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "trailing",
-    "editor.rulers": [],
+	// Diff Editor
+	"diffEditor.ignoreTrimWhitespace": false,
 
-    // Files
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
+	// Editor
+	"editor.inlayHints.enabled": "off",
+	"editor.minimap.enabled": false,
+	"editor.renderWhitespace": "trailing",
+	"editor.rulers": [],
 
-    // Terminal
-    "terminal.integrated.allowChords": false,
-    "terminal.integrated.initialHint": false,
+	// Files
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
 
-    // Workspace
-    "workbench.startupEditor": "none"
+	// Terminal
+	"terminal.integrated.allowChords": false,
+	"terminal.integrated.initialHint": false,
+
+	// Workspace
+	"workbench.startupEditor": "none",
 }
